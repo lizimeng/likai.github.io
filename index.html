@@ -1,0 +1,73 @@
+<!doctype html><html lang=en><head><meta charset=UTF-8><title>神工众志</title><meta name=viewport content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui"><link rel=stylesheet type=text/css href=css/index.css>
+<style type="text/css">
+     html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "微软雅黑";
+    padding: 0;
+}
+
+#loadding {
+     width: 100%;
+     height: 100%;
+     position: fixed;
+     top:0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: rgb(237, 85, 101);
+     z-index: 999;
+}
+#loadding .conten {
+   width: 50%;
+   height: 50%;
+   transform: translateY(50%) translateX(50%);
+}
+#loadding .conten div:nth-child(2){
+      -webkit-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+}
+#loadding .conten div:nth-child(3){
+      -webkit-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+}
+#loadding .conten div {
+    position: absolute;
+    border-radius: 100%;
+    background-color: #fff;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    margin: 0;
+    width: 200px;
+    height: 200px;
+    -webkit-animation: ball-scale-multiple 1.5s 0s linear infinite;
+    animation: ball-scale-multiple 1.5s 0s linear infinite; 
+
+}
+
+@keyframes ball-scale-multiple {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0; }
+
+  5% {
+    opacity: 1; }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; }
+ }
+
+</style>
+</head><body><div id="loadding"><div class="conten"><div></div><div></div><div></div></div></div><div class="content" ><div class="page page1"><div class=page11><div class="worker"></div><div class="boss"></div></div><div class="page12"><div class="XS"></div><div class="WK"></div></div></div><div class="page page2"><div class="gongneng"><h2>推单神器</h2><h3>神工呼叫</h3><p>品类服务能力：灯具、卫浴、地板、吊顶、浴霸、壁纸</p></div><div class="serve"><ul><li>八大节点监控,打造极致用户体验</li><li>配合电商卖家，全国覆盖无缝落地</li><li>追求极致效率，全国统一服务费</li><li>专业售后保障，追求用户终生满意</li></ul></div><div class="app">商家版APP正在开发中，敬请期待...</div><div class="SG"></div></div><div class="page page3"><div class="gongneng"><h2>神工007</h2><h3>接单神器</h3><p>全国工人终身就业平台：安装，维修，装修工人接单工具</p></div><div class="info"><div class="info1"><p>去中介化，直接接单</p><p>用户评价，优胜劣汰</p><p>免费培训，快出成长</p><p>服务越好，接单越多</p><p>手机接单，务实高效</p></div><div class="saoma"><img src=images/qrdown-jiedan.png></div></div><div class="mainimg"></div></div><div class="page page4"><div class="bg"></div><div class=gongneng><h2>下单神器</h2><h3>神工帮帮</h3><p>品类服务能力：灯具、卫浴、地板、吊顶、浴霸、壁纸</p></div><div class="info"><div class="saoma"></div><div class="info1"><p>汇集精英工人 打造极致服务</p><p>自主预约服务时间 质量由你评判</p><p>全程互动监控服务标准 安全靠谱</p><p>按技能水平预约工人 优选最近工人</p><p>48小时上门 12个月服务免费质保</p></div></div><div class="mainimg"></div></div><div class="page page5"></div></div><script type=text/javascript src=sea.js></script><script type=text/javascript src=/pkg/index.html_map.js></script><script type=text/javascript src=lib/seajs-css.js></script><script type=text/javascript src=lib/seajs-preload.js></script><script type=text/javascript>
+        seajs.config({
+             preload : ["lib/jquery-1.12.3.min.js","lib/tween.js"]
+        })
+        seajs.use('js/app',function(app){
+
+        })
+     </script></body></html>
